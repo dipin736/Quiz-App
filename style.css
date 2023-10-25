@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+ ul li{
+    list-style: none;
+}
+body{
+    background-color: #3409cf6e;
+    color: rgb(62, 62, 62);
+
+}
+
+.container1{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: 1px solid;
+   border-radius: 10px;
+
+}
+
+.inner-div{
+   padding: 2rem 8rem;
+   padding-right: 15rem;
+}
+.inner-div h2{
+  font-weight: 300;
+  font-size: 26px;
+ }
+
+.submit{
+    background-color: rgb(113, 113, 244);
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    width: 100px;
+}
+
+.submit:hover{
+    background-color: rgb(16, 16, 241);
+
+}
+
+li{
+    padding: 5px;
+    
+}
+
+input{
+    cursor: pointer;
+}
+
+#showscore{
+    background-color: #dfe6e9;
+    margin: 20px;
+    padding: 20px 40px;
+}
+
+.score{
+    display: none;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+.container{
+    display: flex;
+    width: 100vw;
+}
+
+.panel{
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    flex: auto;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+
+
+
+  .panel.active {
+    flex: 5;
+  }
